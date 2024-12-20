@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for social media icons -->
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #131723;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #131723;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin: 0 20px;
+            transition: color 0.3s, background-color 0.3s; /* Smooth transition for color and background */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ffdd57;
+            background-color: #212529; /* Darker background color when active */
+        }
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(to right, rgb(210, 146, 198), rgb(93, 5, 97)); /* Dual background */
+            color: rgb(15, 13, 13);
+            padding: 5px; /* Reduced padding for shorter header */
+            text-align: center;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2, h3 {
+            color: #15205d;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .aboutme {
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .aboutme img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: none;
+        }
+
+        .aboutme p {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #131723;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffdd57;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            section {
+                padding: 1rem;
+            }
+
+            .aboutme {
+                max-width: 90%;
+            }
+
+            h2, h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        h1{
+            color: rgb(161, 174, 199);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <a href="index.html" onclick="setActive(this)">Home</a>
+        <a href="Resume.html" onclick="setActive(this)">Resume</a>
+        <a href="#contact" onclick="setActive(this)">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>Bio-data</h1>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="aboutme" id="resume">
+        <img src="hamid3.jpg" alt="Hamid Razak Khan">
+        <p><b>Name:</b> Hamid Razak Khan</p>
+        <p><b>Date of Birth:</b> 19/12/2003</p>
+        <p><b>Gender:</b> Male</p>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+        <h3>Education</h3>
+        <ul>
+            <li>Bachelor's in Computer Science - 2020</li>
+            <li>Master's in Web Technology - 2024</li>
+        </ul>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section>
+        <h3>Work Experience</h3>
+        <ul>
+            <li>Frontend Developer at Infosys (Jan 2021 - June 2022)</li>
+            <li>Full Stack Web Developer at Microsoft (July 2022 - Present)</li>
+        </ul>
+    </section>
+
+    <!-- Family Section -->
+    <section>
+        <h3>Family</h3>
+        <ul>
+            <li>Father: Athaulla Khan (business)</li>
+            <li>Mother: Fareeda Banu (Housewife)</li>
+            <li>Siblings: Ahmed Khan (Engineer),Assu khanum(teacher)</li>
+        </ul>
+    </section>
+
+    <!-- Hobbies and Interests Section -->
+    <section>
+        <h3>Hobbies and Interests</h3>
+        <ul>
+            <li>Reading technology blogs</li>
+            <li>Playing chess</li>
+            <li>Traveling and exploring new cultures</li>
+        </ul>
+    </section>
+
+    <!-- Languages Known Section -->
+    <section>
+        <h3>Languages Known</h3>
+        <ul>
+            <li>English (Fluent)</li>
+            <li>Hindi (Native)</li>
+            <li>Urdu (Proficient)</li>
+        </ul>
+    </section>
+
+    <!-- Declaration Section -->
+    <section>
+        <h3>Declaration</h3>
+        <p>
+            I hereby declare that the above information is true to the best of my knowledge and belief.
+        </p>
+        <p>Date: 07/12/2024</p>
+        <p>Place: Haliyal</p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <p>Contact Me:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Hamid Razak Khan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function setActive(link) {
+            // Remove active class from all links
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => link.classList.remove('active'));
+            // Add active class to the clicked link
+            link.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

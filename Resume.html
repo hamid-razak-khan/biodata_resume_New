@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for social media icons -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #131723;
+            line-height: 1.6;
+        }
+
+        /* Navbar Styling */
+        nav {
+            background-color: #131723;
+            padding: 10px 0;
+            text-align: center;
+            
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.6rem;
+            margin: 0 20px;
+            transition: color 0.3s, background-color 0.3s;
+            padding: 6px 10px;
+            border-radius: 5px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #ffdd57;
+            background-color: #212529;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, rgb(210, 146, 198), rgb(93, 5, 97));
+            color: rgb(15, 13, 13);
+            padding: 5px;
+            text-align: center;
+            font-size: 1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Resume Section */
+        section {
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headings */
+        h2, h3 {
+            color: #15205d;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: rgb(161, 174, 199);
+        }
+
+        h3 {
+            color: rgb(32, 20, 158);
+        }
+
+        /* Image Styling */
+        img {
+            width: 150px;
+            border-radius: 50%;
+            margin: 10px auto;
+            display: block;
+            border: 2px solid #ccc;
+        }
+
+        /* List Styling */
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #05264a;
+            font-weight: bold;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #131723;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-icons a {
+            margin: 0 15px;
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #ffdd57;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 768px) {
+            section {
+                padding: 1rem;
+            }
+
+            .aboutme {
+                max-width: 90%;
+            }
+
+            h2, h3 {
+                font-size: 1.3rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                margin: 0 10px;
+            }
+        }
+
+        .aboutme {
+            max-width: 600px;
+            margin: 30px auto;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .aboutme img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <nav>
+        <a href="index.html" onclick="setActive(this)">Home</a>
+        <a href="biodata.html" onclick="setActive(this)">Biodata</a>
+        <a href="#contact" onclick="setActive(this)">Contact</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header id="home">
+        <h1>Resume</h1>
+    </header>
+
+    <!-- About Me Section -->
+    <section class="aboutme" id="resume">
+        <h2>Hamid Razak Khan</h2>
+        <img src="hamid4.jpg" alt="Hamid Razak Khan">
+        <div class="contact-info">
+            <p><strong>Software Engineer</strong></p>
+            <p>Email: <a href="mailto:hamidrazakkhan2003@gmail.com">hamidrazakkhan2003@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/hamidrazak" target="_blank">linkedin.com/in/hamidrazak</a></p>
+        </div>
+    </section>
+
+    <!-- Professional Summary Section -->
+    <section>
+        <h3>Professional Summary</h3>
+        <p>
+            Accomplished Software Developer with over 3 years of experience in creating innovative, scalable, and user-friendly applications.
+            Proficient in frontend and backend technologies, with a strong focus on web development, problem-solving, and team collaboration.
+        </p>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section>
+        <h3>Work Experience</h3>
+        <ul>
+            <li><strong>Infosys:</strong> Fronted Developer(Jan 2021 - June 2022)</li>
+            <li><strong>Microsoft:</strong>Full stack web Developer(July 2022 - Present)</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h3>Skills</h3>
+        <ul>
+            <li>Programming Languages: JavaScript, Python, Java</li>
+            <li>Frontend: HTML, CSS, React.js, Angular</li>
+            <li>Backend: Node.js, Express.js, Django</li>
+            <li>Database: MySQL, MongoDB</li>
+            <li>Version Control: Git, GitHub</li>
+        </ul>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+        <h3>Education</h3>
+        <ul>
+            <li><strong>Bachelor's in Computer Science:</strong> ABC University (2020)</li>
+            <li><strong>Master's in Web Technology:</strong> XYZ University (Expected 2024)</li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section>
+        <h3>Certifications</h3>
+        <ul>
+            <li>Google Cloud Certified Professional Developer</li>
+            <li>Certified React Developer by Udemy</li>
+        </ul>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" id="contact">
+        <p>Contact Me:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourusername" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>© 2024 Hamid Razak Khan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function setActive(link) {
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => link.classList.remove('active'));
+            link.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
